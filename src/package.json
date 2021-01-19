@@ -13,11 +13,5 @@
     "cors": "2.8.5",
     "express": "4.17.1",
     "mochawesome": "6.1.1"
-  },
-  "devDependencies": {
-    "chai": "4.2.0",
-    "chai-http": "4.3.0",
-    "mocha": "8.2.1",
-    "mochawesome-merge": "4.2.0"
   }
 }
