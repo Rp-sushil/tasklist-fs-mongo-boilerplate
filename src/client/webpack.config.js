@@ -1,4 +1,3 @@
-
 const path = require("path");
 const HtmlWebpackPlugin= require('html-webpack-plugin');
 module.exports = {
@@ -37,5 +36,14 @@ module.exports = {
     ],
     resolve: {
         extensions: ['.js', '.jsx'],
-    }
+    },
+    devServer: {
+        proxy: {
+            '/todos/**': {
+                target: 'http://localhost:8080/',
+                secure: false,
+                changeOrigin: true
+            }
+        },
+    },
 };
