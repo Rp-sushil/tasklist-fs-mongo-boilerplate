@@ -8,7 +8,7 @@ const port = process.env.PORT || 8080;
 app.use(cors());
 
 app.use(express.json());
-const { task } = require("./connector");
+const { connector } = require("./connector");
 
 app.listen(port, () => {
   console.log(`http://localhost:${port}`);
