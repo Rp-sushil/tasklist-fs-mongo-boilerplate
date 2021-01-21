@@ -5,7 +5,6 @@ let {taskSchema} = require('./schema');
 const uri = "mongodb://localhost:27017/task"; 
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true ,useCreateIndex: true })
-.then(console.log("Success"))
 
 let collection_connection = mongoose.model('task', taskSchema);
 exports.connector = collection_connection;
