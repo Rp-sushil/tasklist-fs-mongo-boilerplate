@@ -11,7 +11,7 @@ app.use(express.json());
 const { connector } = require("./connector");
 
 app.listen(port, () => {
-  console.log(`Server is listening at {port}`);
+  console.log(`Server is listening at ${port}`);
 });
 
 exports.app;
