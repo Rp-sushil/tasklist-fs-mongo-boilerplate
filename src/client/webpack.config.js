@@ -39,7 +39,7 @@ module.exports = {
     },
     devServer: {
         proxy: {
-            '/todos/**': {
+            '/tasks/**': {
                 target: 'http://localhost:8080/',
                 secure: false,
                 changeOrigin: true
