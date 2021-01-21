@@ -2,7 +2,7 @@ const mongodb = require('mongodb');
 const mongoose = require('mongoose');
 let {taskSchema} = require('./schema');
 
-const uri = ""; 
+const uri = "mongodb://localhost:27017/task"; 
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true ,useCreateIndex: true })
 .then(console.log("Success"))
