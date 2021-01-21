@@ -8,4 +8,4 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true ,useCrea
 .then(console.log("Success"))
 
 let collection_connection = mongoose.model('task', taskSchema);
-exports.task = collection_connection;
+exports.connector = collection_connection;
